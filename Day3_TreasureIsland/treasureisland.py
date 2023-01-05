@@ -27,10 +27,11 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
+#asks initial question and converts the string to lowercase
 direction = input("You come to a crossroads, do you go left or right?\n").lower()
 
 
-
+#nested if/elif/else statements to simulate choose your own adventure game in the console. all inputs are converted to lowercase to allow for user using uppercase letters
 if direction == "left":
     swim_or_wait = input ("After travelling down the road for some time, you come to a river. Type 'swim' to swim across or 'wait' to wait for the ferry.\n").lower()
     if swim_or_wait == "wait":
