@@ -1,4 +1,4 @@
-#For use with Reeborg's World Hurdle 4
+#For use with Reeborgs World Hurdle 4 (find link in the Readme)
 #defines function to enable turning right
 def turn_right():
     turn_left()

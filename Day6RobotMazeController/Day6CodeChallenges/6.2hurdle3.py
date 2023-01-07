@@ -1,4 +1,4 @@
-#For use with Reeborg's World Hurdle 3
+#For use with Reeborg's World Hurdle 3 (find link in the Readme)
 def turn_right():
     turn_left()
     turn_left()

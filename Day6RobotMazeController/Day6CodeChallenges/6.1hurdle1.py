@@ -1,4 +1,4 @@
-#for use at Reeborg's World: https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%201&url=worlds%2Ftutorial_en%2Fhurdle1.json
+#For use with Reeborg's World Hurdle 1 (find link in the Readme)
 
 #define function to turn right with less lines of code
 def turn_right():
