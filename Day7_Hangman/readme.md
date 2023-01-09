@@ -1,0 +1,3 @@
+Today was just a lot of iterations of the Hangman.py game. Instead of uploading each iteration, I chose to just do the final working version.
+
+Overall, this project was pretty straight forward. The largest hurdle I had to jump was getting the clear function to work appropriately. I ended up reordering the code in a way that worked for me, but I have a feeling that it is at least a little inefficient. I may try to come back later and clean it up.
