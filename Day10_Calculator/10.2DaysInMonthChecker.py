@@ -2,13 +2,13 @@ def is_leap(year):
   if year % 4 == 0:
     if year % 100 == 0:
       if year % 400 == 0:
-        return(True)
+        return True
       else:
-        return(False)
+        return False
     else:
-      return(True)
+      return True
   else:
-    return(False)
+    return False
 
 def days_in_month(year, month):
     leap_year = is_leap(year)
