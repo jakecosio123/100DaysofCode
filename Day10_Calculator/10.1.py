@@ -1,4 +1,5 @@
 def format_name(f_name, l_name):
+    """Formats input first and last name into title case."""
     if f_name == "" or l_name == "":
         return "You didn't provide valid inputs."
     f_name_formatted = f_name.title()
