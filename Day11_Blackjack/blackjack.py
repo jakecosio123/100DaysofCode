@@ -126,6 +126,6 @@ def blackjack():
     else:
         print("Invalid input. We'll take that as a 'no.' Catch you next time!")
         return False
-        
+
 while wants_to_play:
     wants_to_play = blackjack()
