@@ -1,5 +1,5 @@
 from os import system, name
-from art import logo
+from art import *
 import random
 
 ############### Our Blackjack House Rules #####################
@@ -102,14 +102,19 @@ def blackjack():
     
     if computer_cards == [11,10] or computer_cards == [10,11]:
         print("Dealer blackjack. You lose. Better luck next time")
+        print(lose_art)
     elif player_cards == [11,10] or player_cards == [10,11]:
         print("Blackjack! You win, congratulations!")
+        print(win_art)
     elif player_score > computer_score:
         print("You win, congratulations!")
+        print(win_art)
     elif player_score == computer_score:
         print("It's a draw. Try again!")
+        print(draw_art)
     else:
         print("You lose. Better luck next time")
+        print(lose_art)
 
     keep_playing = input("Would you like to play again? Type 'yes or 'no' to continue. ").lower()
     
