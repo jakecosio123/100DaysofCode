@@ -1,0 +1,1 @@
+Today was a really light day without a big project. There were a few lectures that gave tips for debugging, then there were some debugging excersizes. I have included the three debugging excersizes we did for reference.
