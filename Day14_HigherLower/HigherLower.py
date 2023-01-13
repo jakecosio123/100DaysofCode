@@ -6,8 +6,10 @@ import random
 score = 0
 streak_going = True
 
+
 def choose_insta():
     return random.choice(data)
+
 
 while streak_going:
     clear()
