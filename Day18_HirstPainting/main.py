@@ -1,4 +1,4 @@
-import colorgram
+# import colorgram
 import turtle as t
 import random
 
@@ -14,7 +14,7 @@ import random
 #
 # print(color_palette)
 
-palette =[
+palette = [
     (144, 76, 50), (188, 165, 117), (166, 153, 36), (14, 46, 85), (139, 185, 176),
     (146, 56, 81), (42, 110, 136), (59, 120, 99), (145, 170, 177), (87, 35, 30), (64, 152, 169),
     (220, 209, 93), (110, 37, 31), (100, 145, 111), (165, 99, 131), (91, 122, 172),
@@ -38,14 +38,5 @@ for num in range(10):
     if num < 9:
         tim.setpos(-250, tim.ycor()+50)
 
-
-
-
-
-
 screen = t.Screen()
 screen.exitonclick()
-
-
-
-
