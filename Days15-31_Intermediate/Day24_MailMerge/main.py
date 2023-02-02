@@ -1,9 +1,9 @@
 # open the file with the names in it and save the names as a list
-with open("./Input/Names/invited_names.txt") as names:
+with open("Input/Names/invited_names.txt") as names:
     name_list = names.readlines()
 
 # open the letter that needs to be formatted and save the message as a list
-with open("./Input/Letters/starting_letter.txt") as letter:
+with open("Input/Letters/starting_letter.txt") as letter:
     #save contents of the letter to a list
     message = letter.readlines()
 
