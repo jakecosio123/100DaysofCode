@@ -13,8 +13,7 @@ b_days = pandas.read_csv("birthdays.csv")
 b_day_list = b_days.to_dict("records")
 
 # choose the letter that we will send
-letter_choice = "letter_templates/letter_" + str(random.randint(1, 3)) + ".txt"
-print(letter_choice)
+letter_choice = f"letter_templates/letter_{random.randint(1, 3)}.txt"
 with open(letter_choice) as letter:
     message = letter.read()
 
@@ -23,7 +22,7 @@ now = dt.datetime.now()
 current_month = now.month
 current_day = now.day
 
-# iterate through all bdays in b_day_list to check if any of the bdays are today
+# iterate through all b_days in b_day_list to check if any of the b_days are today
 for b_day in b_day_list:
     if b_day["day"] == current_day and b_day["month"] == current_month:
 
