@@ -1,5 +1,3 @@
-import os
-import requests
 import gspread
 from flight_search import FlightSearch
 
@@ -12,17 +10,7 @@ class DataManager:
         self.ws = self.sh.get_worksheet(0)
         self.data = self.ws.get_all_values()
         self.num_of_rows = len(self.data)
-        self.sheety_endpoint = os.environ.get("SHEETY_ENDPOINT")
-        self.sheety_token = os.environ.get("SHEETY_TOKEN")
         self.flight_search = FlightSearch()
-        self.headers = {
-            "Authorization": self.sheety_token
-        }
-
-    def get_data(self):
-        self.response = requests.get(url=self.sheety_endpoint, headers=self.headers)
-        self.data = self.response.json()
-        return self.data["prices"]
 
     def update_iata_codes(self):
         index = 0
