@@ -8,7 +8,9 @@ class DataManager:
         self.gc = gspread.service_account()
         self.sh = self.gc.open("Flight Deals")
         self.ws = self.sh.get_worksheet(0)
+        self.ws_two = self.sh.get_worksheet(1)
         self.data = self.ws.get_all_values()
+        self.data_ws_two = self.ws_two.get_all_values()
         self.num_of_rows = len(self.data)
         self.flight_search = FlightSearch()
 
@@ -31,3 +33,10 @@ class DataManager:
         self.ws.update(f"G{row_number}", depart_date)
         self.ws.update(f"H{row_number}", return_date)
         self.ws.update_cell(col="9", row=f"{row_number}", value=f'=HYPERLINK("{link}","Kiwi Link")')
+
+    def get_emails(self):
+        email_list = []
+        num_of_users = len(self.data_ws_two)
+        for num in range(1, num_of_users):
+            email_list.append(self.data_ws_two[num][2])
+        return email_list
